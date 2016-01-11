@@ -2,22 +2,77 @@
 layout: default
 ---
 
-<div class="home">
+<section class="welcome">
+  <div class="wrapper">
+    <h1>tailored web application development</h1>
+    <h2>Let's grow your web application efficiently with high quality standards</h2>
+    <div class="cta">
+      <a href="http://eepurl.com/bL9eMX" class="btn">Contact Me</a>
+    </div>
+  </div>
+</section>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
+<section class="services">
+  <div class="wrapper">
+    <h1>How can I help you ?</h1>
+    <p>I focus on delivering value to your business and help you reach your objectives.
+As a software engineer I can work with you to improve your:</p>
+    <ul>
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        <span class="service">Development speed</span>
+        <span class="description">
+          Team reinforcement to build your product features.
+          Reduce your time time to market
+        </span>
       </li>
-    {% endfor %}
-  </ul>
+      <li>
+        <span class="service">Product Performance</span>
+        <span class="description">
+          Architecture and code optimization. A/B testing, business metrics analytics
+        </span>
+      </li>
+      <li>
+        <span class="service">Reactivity</span>
+        <span class="description">
+          Code refactoring helps to keep your products maintainable and responsive to change
+        </span>
+      </li>
+      <li>
+        <span class="service">Reliability</span>
+        <span class="description">
+          Best practices, code testing and a clean, security, development workflow with proper tools
+        </span>
+      </li>
+      <li>
+        <span class="service">Team Performance</span>
+        <span class="description">
+          Source control workflow, code review, tools
+        </span>
+      </li>
+    </ul>
+    <div class="cta">
+      <a href="http://eepurl.com/bL9eMX" class="btn inverted">Contact Me</a>
+    </div>
+  </div>
+</section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<section class="technologies">
+  <div class="wrapper">
+    <h1>Technologies</h1>
+    <p>My <em>current</em> technical stack relies essentially on Ruby, Ruby on Rails, PostgreSQL</p>
+    <ul>
+      <li>{% include icon-ruby.html %}</li>
+      <li>{% include icon-rails.html %}</li>
+      <li>{% include icon-postgresql.html %}</li>
+    </ul>
+    <div class="cta">
+      <a href="http://eepurl.com/bL9eMX" class="btn inverted">Contact Me</a>
+    </div>
+  </div>
+</section>
 
-</div>
+<section class="contact">
+  <div class="wrapper">
+    <h1>Contact</h1>
+  </div>
+</section>

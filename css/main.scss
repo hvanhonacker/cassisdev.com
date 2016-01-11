@@ -3,10 +3,11 @@
 ---
 @charset "utf-8";
 
-
+@import "bourbon/bourbon";
+@import "neat/neat";
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: 'Source Sans Pro', "Helvetica Neue", Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -14,9 +15,12 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$white-color:      #fdfdfd;
+$cassis-color:     #0B0B22;
+
+$text-color:       #0B0B22;
+$background-color: $white-color;
+$brand-color:      #0B0B22;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -43,13 +47,11 @@ $on-laptop:        800px;
     }
 }
 
-@import 'bourbon';
-@import 'neat';
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
         "layout",
+        "index",
         "syntax-highlighting"
 ;
