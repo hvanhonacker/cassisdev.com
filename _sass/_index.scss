@@ -75,12 +75,13 @@ section.services {
   }
 }
 
-a.btn {
+.btn {
   display: inline-block;
   margin: 0 auto;
 
   &,
   &:visited {
+    background-color: transparent;
     color: $white-color;
     padding: 10px 15px;
     border: 3px solid $white-color;
@@ -95,7 +96,7 @@ a.btn {
 
   &:hover,
   &:focus {
-    background: $white-color;
+    background-color: $white-color;
     color: $brand-color;
     text-decoration: none;
   }
@@ -103,15 +104,46 @@ a.btn {
   &.inverted {
     &,
     &:visited {
+      background-color: transparent;
       color: $brand-color;
       border-color: $brand-color;
     }
 
     &:hover,
     &:focus {
-      background: $brand-color;
+      background-color: $brand-color;
       color: $white-color;
     }
   }
 }
 
+input[type="submit"] {
+  font-size: $base-font-size;
+}
+
+input.field {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+
+input.field:focus {
+  outline: none;
+}
+
+input.field {
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+}
+
+input.field:focus,
+input.field.focus {
+  border-bottom: solid 2px $brand-color;
+}
