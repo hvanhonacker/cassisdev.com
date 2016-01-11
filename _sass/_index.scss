@@ -121,29 +121,29 @@ input[type="submit"] {
   font-size: $base-font-size;
 }
 
-input.field {
+.field {
   display: block;
   margin: 0;
   width: 100%;
-  font-family: sans-serif;
-  font-size: 18px;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
   appearance: none;
   box-shadow: none;
   border-radius: none;
 }
 
-input.field:focus {
+.field:focus {
   outline: none;
 }
 
-input.field {
+.field {
   padding: 10px;
   border: none;
-  border-bottom: solid 2px #c9c9c9;
-  transition: border 0.3s;
+  border-bottom: solid 3px $grey-color-light;
+  transition: border 0.2s;
 }
 
-input.field:focus,
-input.field.focus {
-  border-bottom: solid 2px $brand-color;
+.field:focus,
+.field.focus {
+  border-bottom: solid 3px $brand-color;
 }
