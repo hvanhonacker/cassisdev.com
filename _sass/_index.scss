@@ -4,7 +4,7 @@ section {
 
   h1 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.25em;
   }
 
   h2 {
@@ -50,15 +50,20 @@ section.technologies {
 }
 
 section.services {
+  em {
+    margin-bottom: 0.5em;
+    display: block;
+  }
 
   ul {
     @include outer-container;
     list-style: none;
     margin: 0;
+    margin-top: $spacing-unit;
 
     li {
       @include clearfix;
-      margin-bottom: $spacing-unit / 2;
+      margin-bottom: $spacing-unit;
       // margin: $spacing-unit;
     }
   }
@@ -79,40 +84,37 @@ section.services {
   display: inline-block;
   margin: 0 auto;
 
+  padding: 10px 15px;
+  border: 3px solid $brand-color;
+  @include transition-duration(0.2s);
+  @include user-select(none);
+  text-transform: uppercase;
+
   &,
   &:visited {
+    color: $brand-color;
     background-color: transparent;
-    color: $white-color;
-    padding: 10px 15px;
-    border: 3px solid $white-color;
     text-decoration: none;
-    @include transition-duration(0.2s);
-    @include user-select(none);
-
-
-    user-select:none;
-    text-transform: uppercase;
   }
 
   &:hover,
   &:focus {
-    background-color: $white-color;
-    color: $brand-color;
+    color: $white-color;
+    background-color: $brand-color;
     text-decoration: none;
   }
 
   &.inverted {
     &,
     &:visited {
-      background-color: transparent;
-      color: $brand-color;
-      border-color: $brand-color;
+      color: $white-color;
+      border-color: $white-color;
     }
 
     &:hover,
     &:focus {
-      background-color: $brand-color;
-      color: $white-color;
+      color: $brand-color;
+      background-color: $white-color;
     }
   }
 }
