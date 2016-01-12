@@ -1,4 +1,26 @@
-section {
+.site-nav {
+  text-align: center;
+  ul {
+    list-style: none;
+    margin: 0;
+
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+.site-logo {
+    width: 125px;
+    margin: 0 auto;
+}
+
+.cta {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.default-section {
   padding: $spacing-unit 0 $spacing-unit 0;
   margin-bottom: $spacing-unit;
 
@@ -17,39 +39,17 @@ section {
     font-size: 1.25em;
     font-weight: 300;
   }
-
-  .cta {
-    margin-top: 2em;
-    text-align: center;
-  }
 }
 
-section.welcome {
+.welcome-section {
+  @extend .default-section;
   background-color: $brand-color;
   color: $white-color;
 }
 
-section.technologies {
+.services-section {
+  @extend .default-section;
 
-  background-color: $grey-color-light;
-
-  ul {
-    @include outer-container;
-    list-style: none;
-    margin: 0;
-    margin-top: 2em;
-
-    li {
-      @include span-columns(4);
-
-      svg {
-        height: 100px;
-      }
-    }
-  }
-}
-
-section.services {
   em {
     margin-bottom: 0.5em;
     display: block;
@@ -77,6 +77,27 @@ section.services {
     font-size: 1.25em;
     font-weight: 300;
     @include span-columns(8);
+  }
+}
+
+.technologies-section {
+  @extend .default-section;
+
+  background-color: $grey-color-light;
+
+  ul {
+    @include outer-container;
+    list-style: none;
+    margin: 0;
+    margin-top: 2em;
+
+    li {
+      @include span-columns(4);
+
+      svg {
+        height: 100px;
+      }
+    }
   }
 }
 
@@ -119,7 +140,8 @@ section.services {
   }
 }
 
-input[type="submit"] {
+.submit-btn {
+  @extend .btn;
   font-size: $base-font-size;
 }
 
