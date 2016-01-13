@@ -112,6 +112,10 @@
   }
 }
 
+.contact-section {
+  @extend .default-section;
+}
+
 .btn {
   display: inline-block;
   margin: 0 auto;
