@@ -55,38 +55,38 @@
     display: block;
   }
 
-  ul {
+  .services-list {
     @include outer-container;
     list-style: none;
     margin: 0;
     margin-top: $spacing-unit;
 
-    li {
+    .service {
       @include clearfix;
-      margin-bottom: $spacing-unit;
-      // margin: $spacing-unit;
-    }
-  }
+      margin-bottom: $spacing-unit / 2;
 
-  .service {
-    font-size: 1.25em;
-    margin-bottom: 0.75em;
-    text-align: center;
-    @include span-columns(12);
+      .service-title {
+        font-size: 1.50em;
+        font-weight: 500;
+        margin-bottom: 0.75em;
+        text-align: center;
+        @include span-columns(12);
 
-    @include media($on-laptop) {
-      text-align: left;
-      @include span-columns(4);
-    }
-  }
+        @include media($on-laptop) {
+          text-align: left;
+          @include span-columns(4);
+        }
+      }
 
-  .description {
-    font-size: 1.25em;
-    font-weight: 300;
-    @include span-columns(12);
+      .service-description {
+        font-size: 1.25em;
+        font-weight: 300;
+        @include span-columns(12);
 
-    @include media($on-laptop) {
-       @include span-columns(8);
+        @include media($on-laptop) {
+           @include span-columns(8);
+        }
+      }
     }
   }
 }
@@ -96,13 +96,13 @@
 
   background-color: $grey-color-light;
 
-  ul {
+  .technologies-list {
     @include outer-container;
     list-style: none;
     margin: 0;
     margin-top: 2em;
 
-    li {
+    .technology {
       @include span-columns(4);
 
       svg {
@@ -161,11 +161,13 @@
 }
 
 .field {
+  background-color: $white-color;
   display: block;
   margin: 0;
   width: 100%;
   font-family: $base-font-family;
   font-size: $base-font-size;
+  font-weight: 300;
   appearance: none;
   box-shadow: none;
   border-radius: none;
@@ -186,3 +188,4 @@
 .field.focus {
   border-bottom: solid 3px $brand-color;
 }
+
