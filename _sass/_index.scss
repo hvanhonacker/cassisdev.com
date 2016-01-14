@@ -10,6 +10,32 @@
   }
 }
 
+.site-header {
+  .wrapper {
+    position: relative;
+  }
+}
+
+.lang-nav {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  li {
+    float: right;
+  }
+
+  .lang-nav-link {
+    display: block;
+    padding: 0 0.75em;
+  }
+}
+
+
 .site-logo {
   width: 100px;
   margin: 0 auto;
