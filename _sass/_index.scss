@@ -11,8 +11,12 @@
 }
 
 .site-logo {
-  width: 125px;
+  width: 100px;
   margin: 0 auto;
+
+  @include media($on-laptop) {
+     width: 125px;
+  }
 }
 
 .cta {
@@ -26,7 +30,7 @@
 
   h1 {
     text-align: center;
-    font-size: 2.25em;
+    font-size: 1.75em;
   }
 
   h2 {
