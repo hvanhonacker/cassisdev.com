@@ -35,7 +35,6 @@
   }
 }
 
-
 .site-logo {
   width: 100px;
   margin: 0 auto;
@@ -96,8 +95,8 @@
       margin-bottom: $spacing-unit / 2;
 
       .service-title {
-        font-size: 1.50em;
-        font-weight: 500;
+        font-size: 1.25em;
+        font-weight: 800;
         margin-bottom: 0.75em;
         text-align: center;
         @include span-columns(12);
@@ -125,7 +124,9 @@
   @extend .default-section;
 
   background-color: $grey-color-light;
-
+  p {
+    text-align: center;
+  }
   .technologies-list {
     @include outer-container;
     list-style: none;
@@ -144,6 +145,9 @@
 
 .contact-section {
   @extend .default-section;
+  .contact-email {
+    border-bottom: 1px solid;
+  }
 }
 
 .btn {
