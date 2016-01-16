@@ -7,9 +7,18 @@
 
 # Site settings
 title: cassisdev
-email: hugo@cassisdev.com
+email: contact@cassisdev.com
 description: >
-  Ruby on Rails web application development services.
+  Services de développement d'applications web Ruby on Rails sur mesure en freelance
+
+t:
+  en:
+    description: >
+      Freelance Ruby on Rails web application development services
+  fr:
+    description:  >
+      Services freelance de développement d'applications web Ruby on Rails sur mesure
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://cassisdev.com" # the base hostname & protocol for your site
 twitter_username: cassisdev
