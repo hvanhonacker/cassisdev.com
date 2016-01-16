@@ -148,6 +148,10 @@
   .contact-email {
     border-bottom: 1px solid;
   }
+
+  .contact-form {
+    padding-top: 1em;
+  }
 }
 
 .btn {
@@ -197,7 +201,7 @@
 .field {
   background-color: $white-color;
   display: block;
-  margin: 0;
+  margin: 0 0 1.25em 0;
   width: 100%;
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -212,7 +216,7 @@
 }
 
 .field {
-  padding: 10px;
+  padding-bottom: 10px;
   border: none;
   border-bottom: solid 3px $grey-color-light;
   transition: border 0.2s;
