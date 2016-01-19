@@ -13,11 +13,11 @@ description: >
 
 t:
   en:
-    title: cassisdev - Ruby on Rails development services
+    title: "Cassisdev: Ruby on Rails web application development services"
     description: >
-      Freelance Ruby on Rails web application development services. Available in Lille or remote working
+      Cassisdev: Freelance Ruby on Rails web application development services
   fr:
-    title: cassisdev - Services de développement d'applications web Ruby on Rails - Lille
+    title: "Cassisdev : Services de développement d'applications web Ruby on Rails - Lille ou Télétravail"
     description:  >
       Services freelance de développement d'applications web Ruby on Rails sur mesure. Disponible à Lille ou en télétravail
 
