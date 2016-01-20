@@ -8,18 +8,18 @@
 # Site settings
 
 email: contact@cassisdev.com
-description: >
-  Services de développement d'applications web Ruby on Rails sur mesure en freelance
 
 t:
   en:
-    title: "Cassisdev: Ruby on Rails web application development services"
+    title: "Cassisdev: Freelance Ruby on Rails development based"
     description: >
-      Cassisdev: Freelance Ruby on Rails web application development services
+      Freelance Ruby on Rails web application development: design, implementation, optimisation.
+      Available in Lille or via remote working. Contact me
   fr:
-    title: "Cassisdev : Services de développement d'applications web Ruby on Rails - Lille ou Télétravail"
+    title: "Cassisdev : Développment Ruby on Rails - Freelance, Lille"
     description:  >
-      Services freelance de développement d'applications web Ruby on Rails sur mesure. Disponible à Lille ou en télétravail
+      Développement d'applications web Ruby on Rails Freelance : conception, réalisation, optimisation.
+      Disponible à Lille ou en télétravail. Contactez-moi
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://cassisdev.com" # the base hostname & protocol for your site
