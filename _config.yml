@@ -14,12 +14,12 @@ t:
     title: "Cassisdev: Freelance Ruby on Rails development"
     description: >
       Freelance Ruby on Rails web application development: design, implementation, optimisation.
-      Available in Lille or via remote working. Contact me
+      Available in Lille or for remote working. Contact me
   fr:
     title: "Cassisdev : Développment Ruby on Rails - Freelance, Lille"
     description:  >
       Développement d'applications web Ruby on Rails Freelance : conception, réalisation, optimisation.
-      Disponible à Lille ou en télétravail. Contactez-moi
+      Disponible à Lille ou en travail à distance. Contactez-moi
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://cassisdev.com" # the base hostname & protocol for your site
