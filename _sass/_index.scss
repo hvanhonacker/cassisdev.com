@@ -1,18 +1,17 @@
-.site-nav {
-  text-align: center;
-  ul {
-    list-style: none;
-    margin: 0;
-
-    li {
-      display: inline-block;
-    }
-  }
+.wrapper {
+  position: relative;
 }
 
-.site-header {
-  .wrapper {
-    position: relative;
+.site-title {
+  text-align: center;
+}
+
+.site-logo {
+  width: 100px;
+  margin: 0 auto;
+  @include user-select(none);
+  @include media($on-laptop) {
+     width: 125px;
   }
 }
 
@@ -20,28 +19,20 @@
   position: absolute;
   top: 0;
   right: 30px;
-  ul {
-    list-style: none;
-    margin: 0;
-  }
-
-  li {
-    float: right;
-  }
-
-  .lang-nav-link {
-    display: block;
-    padding: 0 0.75em;
-  }
 }
 
-.site-logo {
-  width: 100px;
-  margin: 0 auto;
+.lang-nav-list {
+  list-style: none;
+  margin: 0;
+}
 
-  @include media($on-laptop) {
-     width: 125px;
-  }
+.lang-nav-item {
+  float: right;
+}
+
+.lang-nav-link {
+  display: block;
+  padding: 0 0.75em;
 }
 
 .cta {
@@ -49,102 +40,88 @@
   text-align: center;
 }
 
-.default-section {
+.section {
   padding: $spacing-unit 0 $spacing-unit 0;
   margin-bottom: $spacing-unit;
+  font-weight: 300;
 
-  h1 {
+  h2, h3 {
     text-align: center;
-    font-size: 1.5em;
   }
 
-  h2 {
-    text-align: center;
-    font-size: 1.25em;
-    font-weight: 300;
-  }
-
-  p {
-    font-size: 1.25em;
-    font-weight: 300;
+  @include media($on-laptop) {
+    font-size: 1.15em;
   }
 }
 
+.subtitle {
+  text-align: center;
+}
+
 .welcome-section {
-  @extend .default-section;
   background-color: $brand-color;
   color: $white-color;
 }
 
 .services-section {
-  @extend .default-section;
-
-  em {
-    margin-bottom: 0.5em;
-    display: block;
-  }
-
   .services-list {
-    @include outer-container;
     list-style: none;
     margin: 0;
+    @include outer-container;
     margin-top: $spacing-unit;
+  }
 
-    .service {
-      @include clearfix;
-      margin-bottom: $spacing-unit / 2;
+  .service-item {
+    @include clearfix;
+    margin-bottom: $spacing-unit / 2;
+  }
 
-      .service-title {
-        font-size: 1.25em;
-        font-weight: 800;
-        margin-bottom: 0.75em;
-        text-align: center;
-        @include span-columns(12);
+  .service-title {
+    text-align: center;
+    @include span-columns(12);
 
-        @include media($on-laptop) {
-          text-align: left;
-          @include span-columns(4);
-        }
-      }
+    @include media($on-laptop) {
+      text-align: left;
+      @include span-columns(4);
+    }
+  }
 
-      .service-description {
-        font-size: 1.25em;
-        font-weight: 300;
-        @include span-columns(12);
+  .service-description {
+    @include span-columns(12);
 
-        @include media($on-laptop) {
-           @include span-columns(8);
-        }
-      }
+    @include media($on-laptop) {
+       @include span-columns(8);
     }
   }
 }
 
 .technologies-section {
-  @extend .default-section;
-
   background-color: $grey-color-light;
-  p {
-    text-align: center;
+
+  @include media($on-laptop) {
+    p {
+      text-align: center;
+    }
   }
+
   .technologies-list {
-    @include outer-container;
     list-style: none;
     margin: 0;
-    margin-top: 2em;
 
-    .technology {
-      @include span-columns(4);
+    @include outer-container;
+    margin-top: 1.5em;
+  }
 
-      svg {
-        height: 100px;
-      }
+  .technology-item {
+    @include span-columns(4);
+
+    svg {
+      height: 75px;
     }
   }
 }
 
 .contact-section {
-  @extend .default-section;
   .contact-email {
     border-bottom: 1px solid;
   }
@@ -157,54 +134,46 @@
 .btn {
   display: inline-block;
   margin: 0 auto;
-
-  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 0.7rem 0.95rem;
   border: 3px solid $brand-color;
   @include transition-duration(0.2s);
   @include user-select(none);
   text-transform: uppercase;
 
-  &,
-  &:visited {
+  &, &:visited {
     color: $brand-color;
     background-color: transparent;
     text-decoration: none;
   }
 
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     color: $white-color;
     background-color: $brand-color;
     text-decoration: none;
   }
-
-  &.inverted {
-    &,
-    &:visited {
-      color: $white-color;
-      border-color: $white-color;
-    }
-
-    &:hover,
-    &:focus {
-      color: $brand-color;
-      background-color: $white-color;
-    }
-  }
 }
 
-.submit-btn {
-  @extend .btn;
-  font-size: $base-font-size;
+.btn-inverted {
+  &, &:visited {
+    color: $white-color;
+    border-color: $white-color;
+  }
+
+  &:hover, &:focus {
+    color: $brand-color;
+    background-color: $white-color;
+  }
 }
 
 .field {
   background-color: $white-color;
   display: block;
-  margin: 0 0 1.25em 0;
+  margin: 0 0 1em 0;
   width: 100%;
   font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-size: 1em;
   font-weight: 300;
   appearance: none;
   box-shadow: none;
@@ -216,14 +185,18 @@
 }
 
 .field {
-  padding-bottom: 10px;
+  padding-bottom: 0.5em;
   border: none;
   border-bottom: solid 3px $grey-color-light;
   transition: border 0.2s;
 }
 
-.field:focus,
-.field.focus {
+.field:focus, .field.focus {
   border-bottom: solid 3px $brand-color;
 }
 
+.submit-btn {
+  @extend .btn;
+  font-size: 1rem;
+  font-weight: $base-font-weight;
+}
