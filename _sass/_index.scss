@@ -114,8 +114,9 @@
 
   .technology-item {
     @include span-columns(4);
+    text-align: center;
 
-    svg {
+    .tech-logo {
       height: 75px;
     }
   }
