@@ -201,3 +201,32 @@
   font-size: 1rem;
   font-weight: $base-font-weight;
 }
+
+.site-footer {
+  .contact-link-list {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+  }
+
+  .contact-link-item {
+    display: inline-block;
+    padding-right: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  a, a:visited {
+    color: $white-color;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $white-color;
+    text-decoration: underline;
+  }
+
+  .copyright {
+    font-weight: 300;
+    text-align: center;
+  }
+}
